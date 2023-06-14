@@ -16,6 +16,14 @@ function change_turn(){
             document.getElementById('block1').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt2(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -25,6 +33,14 @@ function change_turn(){
             document.getElementById('block2').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt3(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -34,6 +50,14 @@ function change_turn(){
             document.getElementById('block3').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt4(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -43,6 +67,14 @@ function change_turn(){
             document.getElementById('block4').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt5(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -52,6 +84,14 @@ function change_turn(){
             document.getElementById('block5').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt6(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -61,6 +101,14 @@ function change_turn(){
             document.getElementById('block6').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt7(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -70,6 +118,14 @@ function change_turn(){
             document.getElementById('block7').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt8(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -79,6 +135,14 @@ function change_turn(){
             document.getElementById('block8').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
     function change_txt9(){
         if (document.getElementById('turn').innerHTML === 'Turn = Player1'){
@@ -88,5 +152,84 @@ function change_turn(){
             document.getElementById('block9').innerHTML='1';
         }
         change_turn();
+        setTimeout(function(){
+            if (checkWin()){
+                return;
+            }
+            else{
+                checkDraw();
+            }
+        },0);
     }
+function checkDraw(){
+    if(!checkWin){
+        alert('It\'s a Draw');
+    }
+}
+function checkWin(){
+    if ((document.getElementById('block1').innerHTML==='0' &&
+        document.getElementById('block4').innerHTML==='0' &&
+        document.getElementById('block7').innerHTML==='0') ||
+        (document.getElementById('block2').innerHTML==='0' &&
+        document.getElementById('block5').innerHTML==='0' &&
+        document.getElementById('block8').innerHTML==='0') ||
+        (document.getElementById('block3').innerHTML==='0' &&
+        document.getElementById('block6').innerHTML==='0' &&
+        document.getElementById('block9').innerHTML==='0') ||
+        (document.getElementById('block1').innerHTML==='0' &&
+        document.getElementById('block2').innerHTML==='0' &&
+        document.getElementById('block3').innerHTML==='0') ||
+        (document.getElementById('block4').innerHTML==='0' &&
+        document.getElementById('block5').innerHTML==='0' &&
+        document.getElementById('block6').innerHTML==='0') ||
+        (document.getElementById('block7').innerHTML==='0' &&
+        document.getElementById('block8').innerHTML==='0' &&
+        document.getElementById('block9').innerHTML==='0') ||
+        (document.getElementById('block1').innerHTML==='0' &&
+        document.getElementById('block5').innerHTML==='0' &&
+        document.getElementById('block9').innerHTML==='0') ||
+        (document.getElementById('block3').innerHTML==='0' &&
+        document.getElementById('block5').innerHTML==='0' &&
+        document.getElementById('block7').innerHTML==='0')){
+            setTimeout(function(){
+                alert('Player1 WINS!!');
+                window.location.reload();
+            },0);
+            return true;
+        }
+    else if ((document.getElementById('block1').innerHTML==='1' &&
+            document.getElementById('block4').innerHTML==='1' &&
+            document.getElementById('block7').innerHTML==='1') ||
+            (document.getElementById('block2').innerHTML==='1' &&
+            document.getElementById('block5').innerHTML==='1' &&
+            document.getElementById('block8').innerHTML==='1') ||
+            (document.getElementById('block3').innerHTML==='1' &&
+            document.getElementById('block6').innerHTML==='1' &&
+            document.getElementById('block9').innerHTML==='1') ||
+            (document.getElementById('block1').innerHTML==='1' &&
+            document.getElementById('block2').innerHTML==='1' &&
+            document.getElementById('block3').innerHTML==='1') ||
+            (document.getElementById('block4').innerHTML==='1' &&
+            document.getElementById('block5').innerHTML==='1' &&
+            document.getElementById('block6').innerHTML==='1') ||
+            (document.getElementById('block7').innerHTML==='1' &&
+            document.getElementById('block8').innerHTML==='1' &&
+            document.getElementById('block9').innerHTML==='1') ||
+            (document.getElementById('block1').innerHTML==='1' &&
+            document.getElementById('block5').innerHTML==='1' &&
+            document.getElementById('block9').innerHTML==='1') ||
+            (document.getElementById('block3').innerHTML==='1' &&
+            document.getElementById('block5').innerHTML==='1' &&
+            document.getElementById('block7').innerHTML==='1')){
+                setTimeout(function(){
+                    alert('Player2 WINS!!');
+                    window.location.reload();
+                },0);
+                return true;
+            }
+}
+function restart(){
+    window.location.reload();
+    return false;
+}
 

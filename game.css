@@ -1,6 +1,12 @@
+body{
+    background-color: rgb(168, 228, 232);
+}
 .heading{
     text-align : center;
     margin-top: 50px;
+    font-size: 50px;
+    /* position: relative;
+    display: flex; */
 }
 table, td{
     border: 2px solid black;
@@ -9,9 +15,70 @@ table{
     width: 400px;
     height: 400px;
     margin-left: 550px;
-    margin-top: 100px;
 }
 td{
     padding: 20px;
     text-align: center;
 }
+#turn{
+    text-align: center;
+    font-size: 30px;
+}
+#btn{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 715px;
+    margin-top: 20px;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#btn::hover{
+    background-color: rgb(69, 69, 225);
+}
+/* .t1{
+    position: relative;
+    animation: bounce 1s ease infinite;
+}
+.i{
+    position: relative;
+    animation: bounce 1s ease infinite .1s;
+}
+.c1{
+    position: relative;
+    animation: bounce 1s ease infinite .2s;
+}
+._1{
+    position: relative;
+    animation: bounce 1s ease infinite .3s;
+}
+.t2{
+    position: relative;
+    animation: bounce 1s ease infinite .4s;
+}
+.a{
+    position: relative;
+    animation: bounce 1s ease infinite .5s;
+}
+.c2{
+    position: relative;
+    animation: bounce 1s ease infinite .6s;
+}
+._2{
+    position: relative;
+    animation: bounce 1s ease infinite .7s;
+}
+.t3{
+    position: relative;
+    animation: bounce 1s ease infinite .8s;
+}
+.o{
+    position: relative;
+    animation: bounce 1s ease infinite .9s;
+}
+.e{
+    position: relative;
+    animation: bounce 1s ease infinite 1s;
+} */
