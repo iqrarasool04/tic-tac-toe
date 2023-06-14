@@ -3,30 +3,29 @@
 <title>TIC-TAC-TOE</title>
 <link rel="stylesheet" href="game.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="game.js"></script>
 </head>
 <body>
-<div>
-    <h1 class="heading">Tic-Tac-Toe</h1>
-</div>
+<h1 class="heading">Tic-Tac-Toe</h1>
+<h3 id="turn">Turn = Player1</h3>
 <div>
     <table>
         <tr>
-            <td class="txt">&#128521;</td>
-            <td class="txt">&#128521;</td>
-            <td class="txt">&#128521;</td>
+            <td id="block1"><button onclick="change_txt1()">&#128521;</button></td>
+            <td id="block2"><button onclick="change_txt2()">&#128521;</button></td>
+            <td id="block3"><button onclick="change_txt3()">&#128521;</button></td>
         </tr>
         <tr>
-            <td class="txt">&#128521;</td>
-            <td class="txt">&#128521;</td>
-            <td class="txt">&#128521;</td>
+            <td id="block4"><button onclick="change_txt4()">&#128521;</button></td>
+            <td id="block5"><button onclick="change_txt5()">&#128521;</button></td>
+            <td id="block6"><button onclick="change_txt6()">&#128521;</button></td>
         </tr>
         <tr>
-            <td class="txt">&#128521;</td>
-            <td class="txt">&#128521;</td>
-            <td class="txt">&#128521;</td>
+            <td id="block7"><button onclick="change_txt7()">&#128521;</button></td>
+            <td id="block8"><button onclick="change_txt8()">&#128521;</button></td>
+            <td id="block9"><button onclick="change_txt9()">&#128521;</button></td>
         </tr>
     </table>
 </div>
+<script src="game.js"></script>
 </body>
 </html>
